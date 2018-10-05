@@ -11,3 +11,5 @@ This Project Demonstrates MVP(Model-View-Presenter Pattern) in Android.
   3. [Lottie Android](https://github.com/airbnb/lottie-ios) for Animation .
   4. [Butterknife](https://github.com/JakeWharton/butterknife) for Bind Android views .
   5. [Calligraphy](https://github.com/chrisjenx/Calligraphy) for Custom fonts .
+  6. [Mockito](https://github.com/mockito/mockito) for Testing .
+
