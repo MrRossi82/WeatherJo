@@ -49,7 +49,7 @@ public class WeatherPresenterTest {
        City mCity =new City();
 
         mCity.setId(AMMAN_ID);
-        mCity.setName(AQABA_NAME);
+        mCity.setName(AMMAN_NAME);
         mCity.setLocation(AMMAN_LOCATION);
         presenter.fetchWeatherData(mCity);
 
