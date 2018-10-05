@@ -1,0 +1,78 @@
+<resources>
+
+    <!-- TODO: GENERAL -->
+
+    <string name="app_name">WeatherJo</string>
+
+    <string name="home_amman_city_title">Amman</string>
+    <string name="home_aqaba_city_title">Aqaba</string>
+    <string name="home_irbid_city_title">Irbid</string>
+
+    <string name="humidity">Humid.</string>
+    <string name="pressure">Press.</string>
+    <string name="clouds">Clouds</string>
+    <string name="feelsLike">Feels Like</string>
+    <string name="windSpeed">Wind</string>
+    <string name="precipProbability">Rain</string>
+
+    <string name="degree">%1$d°</string>
+    <string name="km_h">%1$d km/h</string>
+    <string name="hPa">%1$d hPa</string>
+
+    <string name="powered_by">Powered by Forecast.Io</string>
+    <string name="updated_at">Updated at %1$s</string>
+
+
+    <!-- TODO: ERRORS -->
+
+    <string name="view_empty_title">Weather Details Are Currently Unavailable </string>
+    <string name="view_empty_details">Please Try Again Later</string>
+
+
+    <!-- TODO: Weather ICON  -->
+
+    <string name="thunderstorms" translatable="false">&#xf01e;</string>
+    <string name="rain" translatable="false">&#xf019;</string>
+    <string name="snow" translatable="false">&#xf01b;</string>
+    <string name="sleet" translatable="false">&#xf0b5;</string>
+    <string name="fog" translatable="false">&#xf014;</string>
+    <string name="tornado" translatable="false">&#xf056;</string>
+    <string name="day_sunny" translatable="false">&#xf00d;</string>
+    <string name="cloudy" translatable="false">&#xf013;</string>
+    <string name="night_cloudy" translatable="false">&#xf031;</string>
+    <string name="clear_night" translatable="false">&#xf02e;</string>
+    <string name="day_cloudy" translatable="false">&#xf002;</string>
+    <string name="day_hail" translatable="false">&#xf015;</string>
+    <string name="strong_wind" translatable="false">&#xf050;</string>
+
+    <string name="default_degree_value" translatable="false" >12°</string>
+    <string name="default_summary">Overcast</string>
+
+
+    <!-- TODO:  Activity Setting  -->
+
+    <string name="action_settings">Settings</string>
+    <string name="pref_summary_about">WeatherJo</string>
+    <string name="pref_title_about_app">About</string>
+    <string name="pref_title_version_app">Version App</string>
+    <string name="pref_title_copyright">Copyright</string>
+    <string name="app_version" translatable="false" >1.0</string>
+
+    <string name="pref_title_category_general">General</string>
+    <string name="pref_title_text_unit">Units</string>
+
+    <string name="pref_title_developer">Developer</string>
+
+    <string name="developer_email">alazzurri_91@outlook.com</string>
+    <string name="developer_name">Ahmad Rahahleh</string>
+    <string name="pref_title_dev_email">Email</string>
+    <string name="pref_title_dev_name">Name</string>
+
+    <string name="copyright">All rights reserved WeatherJo© 2018</string>
+
+    <string name="pref_key_text_unit" translatable="false" >key_text_unit</string>
+
+    <string name="unit_type_celsius">Celsius</string>
+    <string name="unit_type_fahrenheit">Fahrenheit</string>
+
+</resources>

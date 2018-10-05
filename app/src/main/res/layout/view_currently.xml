@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_weather_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone">
+
+
+    <TextView
+        android:id="@+id/textView_icon_summary"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:singleLine="true"
+        android:text="@string/snow"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="@dimen/_90sdp"
+        app:layout_constraintEnd_toStartOf="@+id/start"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintStart_toStartOf="@+id/end"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_temperature"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/default_degree_value"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="@dimen/_48sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/start"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="@+id/end"
+        app:layout_constraintTop_toBottomOf="@+id/textView_icon_summary" />
+
+    <TextView
+        android:id="@+id/textView_summary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/default_summary"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/InfoWeatherLayout_wind"
+        app:layout_constraintEnd_toEndOf="@+id/textView_temperature"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="@+id/textView_temperature"
+        app:layout_constraintTop_toBottomOf="@+id/textView_temperature"
+        app:layout_constraintVertical_bias="0.22000003" />
+
+
+    <com.alazz.weatherjo.widgets.views.InfoWeatherLayout
+        android:id="@+id/InfoWeatherLayout_wind"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:ic="&#xf050;"
+        app:layout_constraintBottom_toBottomOf="@+id/InfoWeatherLayout_pressure"
+        app:layout_constraintEnd_toStartOf="@+id/InfoWeatherLayout_pressure"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/end"
+        app:layout_constraintTop_toTopOf="@+id/InfoWeatherLayout_pressure"
+        app:main="17 س/كم"
+        app:sub="@string/windSpeed" />
+
+    <com.alazz.weatherjo.widgets.views.InfoWeatherLayout
+        android:id="@+id/InfoWeatherLayout_pressure"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:ic="&#xf079;"
+        app:layout_constraintBottom_toTopOf="@+id/InfoWeatherLayout_precipitation"
+        app:layout_constraintEnd_toStartOf="@+id/InfoWeatherLayout_humidity"
+        app:layout_constraintStart_toEndOf="@+id/InfoWeatherLayout_wind"
+        app:layout_constraintTop_toBottomOf="@+id/textView_summary"
+        app:layout_constraintVertical_bias="0.51"
+        app:main="1050 pHa"
+        app:sub="@string/pressure" />
+
+    <com.alazz.weatherjo.widgets.views.InfoWeatherLayout
+        android:id="@+id/InfoWeatherLayout_humidity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:ic="&#xf07a;"
+        app:layout_constraintBottom_toBottomOf="@+id/InfoWeatherLayout_pressure"
+        app:layout_constraintEnd_toStartOf="@+id/start"
+        app:layout_constraintStart_toEndOf="@+id/InfoWeatherLayout_pressure"
+        app:layout_constraintTop_toTopOf="@+id/InfoWeatherLayout_pressure"
+        app:main="12°"
+        app:sub="@string/humidity" />
+
+    <com.alazz.weatherjo.widgets.views.InfoWeatherLayout
+        android:id="@+id/InfoWeatherLayout_clouds"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:ic="&#xf013;"
+        app:layout_constraintBottom_toBottomOf="@+id/InfoWeatherLayout_precipitation"
+        app:layout_constraintEnd_toStartOf="@+id/start"
+        app:layout_constraintStart_toEndOf="@+id/InfoWeatherLayout_precipitation"
+        app:layout_constraintTop_toTopOf="@+id/InfoWeatherLayout_precipitation"
+        app:main="20°"
+        app:sub="@string/clouds" />
+
+    <com.alazz.weatherjo.widgets.views.InfoWeatherLayout
+        android:id="@+id/InfoWeatherLayout_precipitation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+
+        app:ic="&#xf084;"
+        app:layout_constraintEnd_toStartOf="@+id/InfoWeatherLayout_clouds"
+        app:layout_constraintStart_toEndOf="@+id/InfoWeatherLayout_feels_like"
+        app:layout_constraintTop_toBottomOf="@+id/InfoWeatherLayout_pressure"
+        app:main="0%"
+        app:sub="@string/precipProbability" />
+
+    <com.alazz.weatherjo.widgets.views.InfoWeatherLayout
+        android:id="@+id/InfoWeatherLayout_feels_like"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:ic="&#xf055;"
+        app:layout_constraintBottom_toBottomOf="@+id/InfoWeatherLayout_precipitation"
+        app:layout_constraintEnd_toStartOf="@+id/InfoWeatherLayout_precipitation"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/end"
+        app:layout_constraintTop_toTopOf="@+id/InfoWeatherLayout_precipitation"
+        app:main="12°"
+        app:sub="@string/feelsLike" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+
+    <include
+        layout="@layout/updated_at"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/start"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/end"
+        app:layout_constraintTop_toBottomOf="@+id/InfoWeatherLayout_precipitation" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+
+

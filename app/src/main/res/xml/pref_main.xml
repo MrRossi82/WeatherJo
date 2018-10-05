@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+
+    <PreferenceCategory
+        android:title="@string/pref_title_category_general"        >
+
+        <ListPreference
+            android:defaultValue="3"
+            android:dialogTitle="@string/pref_title_text_unit"
+            android:entries="@array/pref_text_unit_entries"
+            android:entryValues="@array/pref_text_unit_values"
+            android:key="@string/pref_key_text_unit"
+            android:title="@string/pref_title_text_unit" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/pref_title_developer">
+
+        <Preference
+            android:summary="@string/developer_name"
+            android:title="@string/pref_title_dev_name" />
+
+
+        <Preference
+            android:summary="@string/developer_email"
+            android:title="@string/pref_title_dev_email" />
+
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/pref_title_about_app">
+
+        <Preference
+            android:selectable="false"
+            android:summary="@string/pref_summary_about" />
+
+        <Preference
+            android:summary="@string/copyright"
+            android:title="@string/pref_title_copyright" />
+
+
+        <Preference
+            android:summary="@string/app_version"
+            android:title="@string/pref_title_version_app" />
+
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
+
+

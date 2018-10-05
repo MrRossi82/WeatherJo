@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_empty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+
+    <ImageView
+        android:id="@+id/imageView_empty"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toTopOf="@+id/textView_empty_title"
+        app:layout_constraintDimensionRatio="H,16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35000002"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/ic_empty" />
+
+
+    <TextView
+        android:id="@+id/textView_empty_title"
+        style="@style/AppTheme.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/view_empty_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorBrightOrange"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_empty_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_empty" />
+
+    <TextView
+        android:id="@+id/textView_empty_details"
+        style="@style/AppTheme.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/view_empty_details"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_empty_title" />
+
+
+</android.support.constraint.ConstraintLayout>

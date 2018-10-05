@@ -1,0 +1,64 @@
+<resources>
+
+    <string name="app_name">طقس الأردن</string>
+
+    <string name="home_amman_city_title">عمان</string>
+    <string name="home_aqaba_city_title">العقبة</string>
+    <string name="home_irbid_city_title">إربد</string>
+
+    <string name="humidity">الرطوبة</string>
+    <string name="pressure">الضغط</string>
+    <string name="clouds">الغيوم</string>
+    <string name="feelsLike">تشعر به</string>
+    <string name="windSpeed">الرياح</string>
+    <string name="precipProbability">الأمطار</string>
+    <string name="default_summary">صاف</string>
+
+    <string name="degree">%1$d°</string>
+    <string name="km_h" >%1$d كم/س</string>
+    <string name="hPa" >%1$d م.ب</string>
+
+    <string name="powered_by" >بدعم من Forecast.Io</string>
+    <string name="updated_at">تم التحديث %1$s</string>
+
+
+    <string name="view_empty_title">تفاصيل الطقس غير متاحة حالياً</string>
+    <string name="view_empty_details">يرجى المحاولة في وقت لاحق</string>
+
+    <!-- الأعدادات : xml/setting_preference.xml -->
+
+    <string name="action_settings">إعدادات</string>
+    <string name="pref_summary_about">تطبيق طقس الأردن</string>
+    <string name="pref_title_about_app">حول التطبيق</string>
+    <string name="pref_title_version_app">إصدار التطبيق</string>
+    <string name="pref_title_copyright">حقوق النشر</string>
+
+    <string name="pref_title_category_general">عام</string>
+    <string name="pref_title_text_unit">وحدات القياس</string>
+
+    <string name="pref_title_developer">المطور</string>
+
+    <string name="developer_email">alazzurri_91@outlook.com</string>
+    <string name="developer_name">Ahmad Rahahleh</string>
+    <string name="pref_title_dev_email">البريد الإلكتروني</string>
+    <string name="pref_title_dev_name">الإسم</string>
+
+    <string name="copyright">جميع حقوق النشر محفوظة طقس الأردن © 2018</string>
+
+    <string name="unit_type_celsius">السيليزية</string>
+    <string name="unit_type_fahrenheit">الفهرنهايت</string>
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
